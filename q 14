@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+class Calculator
+{
+public:
+    int add(int a, int b)
+    {
+        return a + b;
+    }
+
+    double add(double a, double b)
+    {
+        return a + b;
+    }
+};
+
+int main()
+{
+    Calculator c;
+
+    int a, b;
+    double x, y;
+
+    cout << "Enter two integers: ";
+    cin >> a >> b;
+
+    cout << "Sum of integers: " << c.add(a, b) << endl;
+
+    cout << "\nEnter two decimal numbers: ";
+    cin >> x >> y;
+
+    cout << "Sum of decimal numbers: " << c.add(x, y);
+
+    return 0;
+}
