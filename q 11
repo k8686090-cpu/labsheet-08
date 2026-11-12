@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+
+class Car
+{
+    string brand;
+    float price;
+
+public:
+    void input()
+    {
+        cout << "Enter car brand: ";
+        cin >> brand;
+
+        cout << "Enter car price: ";
+        cin >> price;
+    }
+
+    void display()
+    {
+        cout << "Brand: " << brand << endl;
+        cout << "Price: " << price << endl;
+    }
+};
+
+int main()
+{
+    Car c1, c2, c3;
+
+    cout << "Enter details of Car 1:\n";
+    c1.input();
+
+    cout << "\nEnter details of Car 2:\n";
+    c2.input();
+
+    cout << "\nEnter details of Car 3:\n";
+    c3.input();
+
+    cout << "\nCar Details:\n";
+
+    cout << "\nCar 1:\n";
+    c1.display();
+
+    cout << "\nCar 2:\n";
+    c2.display();
+
+    cout << "\nCar 3:\n";
+    c3.display();
+
+    return 0;
+}
