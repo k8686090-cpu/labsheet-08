@@ -1,0 +1,30 @@
+#include <iostream>
+#include <sstream>
+using namespace std;
+
+void countWords(string str)
+{
+    string word;
+    int count = 0;
+
+    stringstream ss(str);
+
+    while (ss >> word)
+    {
+        count++;
+    }
+
+    cout << "Total number of words: " << count;
+}
+
+int main()
+{
+    string str;
+
+    cout << "Enter a string: ";
+    getline(cin, str);
+
+    countWords(str);
+
+    return 0;
+}
